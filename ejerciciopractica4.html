@@ -1,0 +1,34 @@
+<!--Crea una función que desactive el envio de un formulario cuando se haga click en el botón de enviar.-->
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script>
+    function desactivarEnvio(formularioId) {
+      let formulario = document.getElementById(formularioId);
+      
+      formulario.addEventListener('submit',desactivar)
+    } 
+function desactivar(event) {
+    event.preventDefault();
+        alert ("ERROR");
+}
+
+        
+    
+    window.onload = agregarEvento;
+  </script>
+</head>
+<body>
+  
+  
+  <form id="miFormulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+  
+    
+    <button type="submit" onclick="desactivarEnvio('miFormulario')">Enviar</button>
+  </form>
+</body>
+</html>

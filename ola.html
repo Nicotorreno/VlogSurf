@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Página Web</title>
+  <style>
+    /* Estilo de la cabeza de la página */
+    header {
+      background-color: #3498db; /* Puedes ajustar el color según tus preferencias */
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Estilo del cuerpo de la página */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ecf0f1; /* Puedes ajustar el color según tus preferencias */
+    }
+
+    /* Estilo de la ola en la transición entre la cabeza y el cuerpo */
+    .wave {
+      position: relative;
+      margin-top: -50px; /* Ajusta la altura de la ola según tus necesidades */
+      background-color: #ecf0f1; /* Coincide con el color de fondo del cuerpo */
+      clip-path: polygon(0 100%, 100% 100%, 100% 75%, 0 75%); /* Define la forma de la ola */
+      height: 50px; /* Ajusta la altura de la ola según tus necesidades */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeza de la página -->
+  <header>
+    <h1>Tu Encabezado</h1>
+    <p>Bienvenido/a a tu página web</p>
+  </header>
+
+  <!-- Ola entre la cabeza y el cuerpo -->
+  <div class="wave"></div>
+
+  <!-- Cuerpo de la página -->
+  <section>
+    <h2>Contenido Principal</h2>
+    <p>Aquí va el contenido de tu página web.</p>
+  </section>
+
+</body>
+</html>

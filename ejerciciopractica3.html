@@ -1,0 +1,46 @@
+<!--Haz una función que elimine todos los elementos duplicados de una lista desordenada -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eliminar elementos duplicados de una lista desordenada</title>
+  <script>
+    function eliminarDuplicados() {
+      let lista = document.getElementById('miLista');
+      let elementos = lista.getElementsByTagName('li');
+      let valores = [];
+
+      
+      for (let i = 0; i < elementos.length; i++) {
+        let valor = elementos[i].textContent;
+        if (!valores.includes(valor)) {
+          valores.push(valor);
+        }
+      }
+
+   
+      lista.innerHTML = '';
+
+     
+      for (let i = 0; i < valores.length; i++) {
+        let nuevoElemento = document.createElement('li');
+        nuevoElemento.textContent = valores[i];
+        lista.appendChild(nuevoElemento);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Eliminar elementos duplicados de una lista desordenada</h1>
+  
+  <ul id="miLista">
+    <li>Manzana</li>
+    <li>Plátano</li>
+    <li>Manzana</li>
+    <li>Pera</li>
+    <li>Plátano</li>
+    <li>Naranja</li>
+  </ul>
+  
+  <button onclick="eliminarDuplicados()">Eliminar duplicados</button>
+</body>
+</html>

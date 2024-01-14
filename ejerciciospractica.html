@@ -1,0 +1,109 @@
+Crea una función que reciba como argumento el ID de un elemento y alterne su visibilidad. 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alternar Visibilidad</title>
+  <script>
+    function alternarVisibilidad(elementId) {
+      let elemento = document.getElementById(elementId);
+      
+      if (elemento.style.display == 'none') {
+        elemento.style.display = 'block';
+      } else {
+        elemento.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="alternarVisibilidad('miElemento')">Alternar Visibilidad</button>
+  <div id="miElemento" style="display: none;">
+    <!-- Contenido del elemento -->
+  </div>
+</body>
+</html>
+
+
+Escribe una función que reciba una etiqueta HTML como argumento y devuelva la cantidad de etiquetas que hay en la página 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <p id="parrafo">Estoy aqui</p>
+    <button id="boton"> pulsame </button>
+ 
+  <script>
+    function agregaEventos() {
+  let boton = document.getElementById('pulsa');
+  boton.addEventListener('click',buscaEtiquetas);
+}
+
+
+function buscaEtiquetas() {
+  let etiqueta = document.getElementById('etiqueta').value;
+  let resultado = document.getElementsByTagName(etiqueta);
+  console.log(resultado.length);
+}
+window.onload = agregaEventos;
+
+ 
+ </sript>
+</body>
+</html>
+
+Haz una función que elimine todos los elementos duplicados de una lista desordenada 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eliminar elementos duplicados de una lista desordenada</title>
+  <script>
+    function eliminarDuplicados() {
+      let lista = document.getElementById('miLista');
+      let elementos = lista.getElementsByTagName('li');
+      let valores = [];
+
+      // Obtener los valores únicos de los elementos de la lista
+      for (let i = 0; i < elementos.length; i++) {
+        let valor = elementos[i].textContent;
+        if (!valores.includes(valor)) {
+          valores.push(valor);
+        }
+      }
+
+      // Limpiar la lista
+      lista.innerHTML = '';
+
+      // Crear nuevos elementos con los valores únicos
+      for (let i = 0; i < valores.length; i++) {
+        let nuevoElemento = document.createElement('li');
+        nuevoElemento.textContent = valores[i];
+        lista.appendChild(nuevoElemento);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Eliminar elementos duplicados de una lista desordenada</h1>
+  
+  <ul id="miLista">
+    <li>Manzana</li>
+    <li>Plátano</li>
+    <li>Manzana</li>
+    <li>Pera</li>
+    <li>Plátano</li>
+    <li>Naranja</li>
+  </ul>
+  
+  <button onclick="eliminarDuplicados()">Eliminar duplicados</button>
+</body>
+</html>
+
+Crea una función que desactive el envio de un formulario cuando se haga click en el botón de enviar.
+
+Implementa una función que devuelva todos los datos de un formulario en un div. Los datos deberán de tener sus nombres asociados 
+
+Crear una función que muestre debajo de un formulario la suma de todos los campos numericos 
+
+Crea una función a la cual le pasaremos dos numeros una será de filas de una tabla y el otro de columnas. Implementar la tabla creada 

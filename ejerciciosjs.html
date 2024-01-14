@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+   
+<form action ="">
+    <label for ="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre">
+    <br>
+    <label for="apellido">Apellido</label>
+    <input type="text" name="apellido" id="apellido">
+    <br>
+    <label for="edad">Edad</label>
+    <input type="number" name="edad" id="edad" max="80" min="18">
+    <br>
+    <label for ="nombreUsu">Nombre de Usuario</label>
+    <input type ="text" name="nombreUsu" id="nombreUsu">
+    <br>
+    <label for="contra">Contraseña</label>
+    <input type="password" name="contra" id="contra">
+    <br>
+    <label for="fechaNac">Fecha de nacimiento</label>
+    <input type="date" name="fechaNac" id="fechaNac">
+</form>
+   
+   
+   
+</body>
+    <script src="js/ejerciciosjs.js"></script>
+</html>
+
+Crea una función que reciba como argumento el ID de un elemento y alterne su visibilidad. 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alternar Visibilidad</title>
+  <script>
+    function alternarVisibilidad(elementId) {
+      let elemento = document.getElementById(elementId);
+      
+      if (elemento.style.display == 'none') {
+        elemento.style.display = 'block';
+      } else {
+        elemento.style.display = 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+  <button onclick="alternarVisibilidad('miElemento')">Alternar Visibilidad</button>
+  <div id="miElemento" style="display: none;">
+    <!-- Contenido del elemento -->
+  </div>
+</body>
+</html>
+
+
+Escribe una función que reciba una etiqueta HTML como argumento y devuelva la cantidad de etiquetas que hay en la página 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contar Etiquetas HTML</title>
+  <script>
+    function contarEtiquetas(etiqueta) {
+      let elementos = document.getElementsByTagName(etiqueta);
+      return elementos.length;
+    }
+    
+    function mostrarCantidadEtiquetas() {
+      let etiqueta = document.getElementById('etiquetaInput').value;
+      let cantidad = contarEtiquetas(etiqueta);
+      document.getElementById('resultado').textContent = 'Cantidad de etiquetas <' + etiqueta + '>: ' + cantidad;
+    }
+  </script>
+</head>
+<body>
+  <label for="etiquetaInput">Ingresa una etiqueta HTML:</label>
+  <input type="text" id="etiquetaInput">
+  <button onclick="mostrarCantidadEtiquetas()">Contar</button>
+  <p id="resultado"></p>
+</body>
+</html>
+
+Haz una función que elimine todos los elementos duplicados de una lista desordenada 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eliminar elementos duplicados de una lista desordenada</title>
+  <script>
+    function eliminarDuplicados() {
+      let lista = document.getElementById('miLista');
+      let elementos = lista.getElementsByTagName('li');
+      let valores = [];
+
+      // Obtener los valores únicos de los elementos de la lista
+      for (var i = 0; i < elementos.length; i++) {
+        var valor = elementos[i].textContent;
+        if (!valores.includes(valor)) {
+          valores.push(valor);
+        }
+      }
+
+      // Limpiar la lista
+      lista.innerHTML = '';
+
+      // Crear nuevos elementos con los valores únicos
+      for (let i = 0; i < valores.length; i++) {
+        let nuevoElemento = document.createElement('li');
+        nuevoElemento.textContent = valores[i];
+        lista.appendChild(nuevoElemento);
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Eliminar elementos duplicados de una lista desordenada</h1>
+  
+  <ul id="miLista">
+    <li>Manzana</li>
+    <li>Plátano</li>
+    <li>Manzana</li>
+    <li>Pera</li>
+    <li>Plátano</li>
+    <li>Naranja</li>
+  </ul>
+  
+  <button onclick="eliminarDuplicados()">Eliminar duplicados</button>
+</body>
+</html>
+
+Crea una función que desactive el envio de un formulario cuando se haga click en el botón de enviar.
+
+Implementa una función que devuelva todos los datos de un formulario en un div. Los datos deberán de tener sus nombres asociados 
+
+Crear una función que muestre debajo de un formulario la suma de todos los campos numericos 
+
+Crea una función a la cual le pasaremos dos numeros una será de filas de una tabla y el otro de columnas. Implementar la tabla creada 

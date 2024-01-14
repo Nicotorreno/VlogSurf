@@ -1,0 +1,26 @@
+a{
+    position: fixed;
+    bottom: 10%;
+    right:10%
+    display inline-block;
+    background-color: rgb(160, 242, 242);
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+}
+a:hover{
+    background-color: crimson;
+}
+html{
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    background-color: crimson;
+}
+html::-webkit-scrollbar-button{
+    background-color: blue;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: darkgreen;
+}

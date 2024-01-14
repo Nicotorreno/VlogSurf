@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Modal</title>
+    <style>
+      .fondoModal {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal {
+        width: 30rem;
+        box-shadow: 9px 10px black;
+        border: 4px solid black;
+        background-color: white;
+      }
+      .modalHeader {
+        background-color: aquamarine;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+      .modalHeader span {
+        font-size: 2rem;
+        padding-right: 0.5rem;
+        cursor: pointer;
+        margin-top: 0.5rem;
+      }
+      .modalFooter {
+        background-color: aquamarine;
+        margin-bottom: 0;
+      }
+      header h2 {
+        margin-left: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>ESTAMOS HACIENDO UN MODAL</h2>
+      <button id="abrirModal">Abrir modal</button>
+      <div class="fondoModal" id="idModal">
+        <div class="modal">
+          <header class="modalHeader">
+            <span id="cierraModal">&times;</span>
+            <h2>Titulo del modal</h2>
+          </header>
+          <div>
+            <p>Texto del modal</p>
+          </div>
+          <footer class="modalFooter">
+            <p>Footer del modal</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let abrirModal = document.getElementById("abrirModal");
+    let cierraModal = document.getElementById("cierraModal");
+    function agregaEvento() {
+      abrirModal.addEventListener("click", abrir);
+      cierraModal.addEventListener("click", cerrar);
+    }
+
+    function abrir() {
+      let modal = document.getElementById("idModal");
+
+      modal.style.display = "flex";
+    }
+
+    function cerrar() {
+      let modal = document.getElementById("idModal");
+      modal.style.display = "none";
+    }
+
+    window.onload = agregaEvento;
+  </script>
+</html>

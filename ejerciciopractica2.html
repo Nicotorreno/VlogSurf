@@ -1,0 +1,29 @@
+<!--Escribe una función que reciba una etiqueta HTML como argumento y devuelva la cantidad de etiquetas que hay en la página-->
+
+
+<html>
+ 
+<head>
+
+<body>
+    <p id="parrafo">Estoy aqui</p>
+    <button id="boton"> pulsame </button>
+ 
+  <script>
+    function agregaEventos() {
+  let boton = document.getElementById('pulsa');
+  boton.addEventListener('click',buscaEtiquetas);
+}
+
+
+function buscaEtiquetas() {
+  let etiqueta = document.getElementById('etiqueta').value;
+  let resultado = document.getElementsByTagName(etiqueta);
+  console.log(resultado.length);
+}
+window.onload = agregaEventos;
+
+ 
+ </sript>
+</body>
+</html>
