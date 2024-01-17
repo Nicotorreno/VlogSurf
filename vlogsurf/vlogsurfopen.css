@@ -199,13 +199,6 @@ main {
 
 }
 
-
-    
-
-
-
-
-
 .footer { /* Pie de página */
     background-color:#e6b9ef; /*Color pie de página*/
     margin: 0;
@@ -217,12 +210,6 @@ main {
     padding: 40px 100px;
     text-align:center;
     
-}
-.contenedor{
-   max-width: 1200px;
-    margin:0auto;
-
-
 }
 .footer-row{
     display: flex;
@@ -276,6 +263,43 @@ main {
 
 
 }
+
+
+
+.redes-sociales{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 0%;
+    margin-right: 10px;
+}
+.redes-sociales a{
+    display:inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height:40px;
+    border-radius:50%;
+    color:white;
+    transition:all .5s ease;
+}
+
+.contenedor{
+    max-width:1200px;
+    margin:0auto;
+    margin-right:50%;
+}
+ul{
+    list-style:none;
+}
+.contenedor-redes{
+    display: flex;
+    justify-content:center;
+}
+
+    
+
 
 
 
