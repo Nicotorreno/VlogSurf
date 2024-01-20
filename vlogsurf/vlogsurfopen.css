@@ -240,6 +240,7 @@ main {
     display: block;
     margin-bottom: 15px;
     transition:all .3s ease;
+    color:hsl(290, 67%, 32%);
 }
 .footer-links ul li a:hover{
     color:white;
@@ -297,5 +298,12 @@ ul{
               display: block;
               text-align: center;
               float: none;
+            }
+            .footer-links{
+                width:100%;
+                margin:0;
+            }
+            .footer-row{
+                margin-left:0;
             }
         }

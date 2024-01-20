@@ -75,9 +75,8 @@ nav a {
     
 }
 
-
 .footer { /* Pie de página */
-    background-color:#e6b9ef; /*Color pie de página*/
+    background-color:#e6b9ef; 
     margin: 0;
     padding:0;
     box-sizing:border-box;
@@ -92,7 +91,6 @@ nav a {
 .footer-row{
     display: flex;
     flex-wrap: wrap;
-    margin-left:200px;
 
 }
 .footer-links{
@@ -117,6 +115,7 @@ nav a {
     display: block;
     margin-bottom: 15px;
     transition:all .3s ease;
+    color:hsl(290, 67%, 32%);
 }
 .footer-links ul li a:hover{
     color:white;
@@ -175,5 +174,12 @@ ul{
               display: block;
               text-align: center;
               float: none;
+            }
+            .footer-links{
+                width:100%;
+                margin:0;
+            }
+            .footer-row{
+                margin-left:0;
             }
         }
