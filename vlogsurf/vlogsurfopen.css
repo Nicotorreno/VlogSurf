@@ -143,7 +143,7 @@ main {
     margin: left 100px;
 
 }
-.card{
+.card{    /* Colocar las cards centradas*/
     width: 100%;
     margin: 70px;
     display: flex;
