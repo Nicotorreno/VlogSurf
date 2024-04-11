@@ -76,7 +76,7 @@ nav a {
 }
 
 .footer { /* Pie de página */
-    background-color:#e6b9ef; 
+    background-color:#e6b9ef; /*Color pie de página*/
     margin: 0;
     padding:0;
     box-sizing:border-box;
@@ -91,6 +91,7 @@ nav a {
 .footer-row{
     display: flex;
     flex-wrap: wrap;
+    margin-left:200px;
 
 }
 .footer-links{
@@ -158,6 +159,10 @@ ul{
     display: flex;
     justify-content: center;
 }
+
+
+
+
 
 
 /* Responsive */

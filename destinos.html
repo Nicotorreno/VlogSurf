@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Surf</title>
     <link rel="stylesheet" href="css/destinos.css">
-   
+    <script type="text/javascript" src="js/destinos.js"></script>
     
 
    
@@ -27,6 +27,51 @@
         <a href="newsletter.html">Newsletter</a>
     </nav>
     <main>
+        <!--MODAL Hawaii-->
+        <div>
+            <div class="fondoModal" id="idModalHawai">
+              <div class="modal">
+                <header class="modalHeader">
+                  <span id="cierraModalHawai">&times;</span>
+                  <h2>Tiempo en Hawaii</h2>
+                </header>
+                <div id="tiempo_fe2b8e71ff1fdf8aad6e6f9b805f1ed6"> <div></div><div> <img src="//www.tiempo.es/build/img/logo/tiempo133.png" width="80" height="18" alt="tiempo.es"> </div> <script type="text/javascript" src="//www.tiempo.es/widload/es/hor/620/146/110/us5856195/fe2b8e71ff1fdf8aad6e6f9b805f1ed6.js"></script> </div>
+                <footer class="modalFooter">
+                  <p>&copy; 2024 Bluerush </p>
+                </footer>
+              </div>
+            </div>
+        </div>
+        <!--MODAL Australia-->
+        <div>
+            <div class="fondoModal" id="idModalAustralia">
+                <div class="modal">
+                <header class="modalHeader">
+                    <span id="cierraModalAustralia">&times;</span>
+                    <h2>Tiempo en Australia</h2> 
+                </header>
+                <div id="tiempo_f2651da927bf5282c7c37eb48463f3d8"> <div></div><div> <img src="//www.tiempo.es/build/img/logo/tiempo133.png" width="80" height="18" alt="tiempo.es"> </div> <script type="text/javascript" src="//www.tiempo.es/widload/es/hor/620/146/110/au0ns0062/f2651da927bf5282c7c37eb48463f3d8.js"></script> </div>
+                <footer class="modalFooter">
+                    <p>&copy; 2024 Bluerush </p>
+                </footer>
+                </div>
+            </div>
+        </div>
+        <!--MODAL Nazaré-->
+        <div>
+            <div class="fondoModal" id="idModalNazare">
+                <div class="modal">
+                <header class="modalHeader">
+                    <span id="cierraModalNazare">&times;</span>
+                    <h2>Tiempo en Nazaré</h2> 
+                </header>
+                <div id="tiempo_b14547f50cd15a2b0d3b761c883871d4"> <div></div><div> <img src="//www.tiempo.es/build/img/logo/tiempo133.png" width="80" height="18" alt="tiempo.es"> </div> <script type="text/javascript" src="//www.tiempo.es/widload/es/hor/620/146/110/pt2265552/b14547f50cd15a2b0d3b761c883871d4.js"></script> </div>
+                <footer class="modalFooter">
+                    <p>&copy; 2024 Bluerush </p>
+                </footer>
+                </div>
+            </div>
+        </div>
         <div class="envoltura"> <!--Hawái-->
             <div class="card">
                 <img src="img/imagenes/img13.jpg" class="imagen">
@@ -35,8 +80,8 @@
                     <p>Hawái es ampliamente reconocido como el lugar de nacimiento del surf moderno. 
                         El surf tiene profundas raíces culturales en la tradición hawaiana y
                          ha sido parte de la vida de los hawaianos durante siglos.</p>
-                    <a href="#" class="btn">Leer más</a>
-
+                    <a href="https://viajes.nationalgeographic.com.es/a/hawai-paraiso-esmeralda-pacifico_17658" target="_blank" rel="noreferrer" class="btn">Leer más</a>
+                    <button class="btn" id="btnHawai">Ver tiempo</button>
                 </div>
             </div>            
             <div class="card">    <!--Australia-->
@@ -46,8 +91,8 @@
                     <p>La Gold Coast es un destino icónico para los amantes del surf en todo el mundo, y por una buena razón.
                          Este tramo de costa en Queensland, Australia, 
                         ofrece una serie de características que lo convierten en un paraíso de surfistas.</p>
-                    <a href="#" class="btn">Leer más</a>
-
+                    <a href="https://viajes.nationalgeographic.com.es/p/australia" target="_blank" rel="noreferrer" class="btn">Leer más</a>
+                    <button class="btn" id="btnAustralia">Ver tiempo</button>
                 </div>
             </div>
 
@@ -56,32 +101,27 @@
                 <div class="info">
                     <h2>Nazaré</h2>
                     <p>Nazaré es un nombre que resuena en todo el mundo del surf debido a sus olas verdaderamente gigantes.</p>
-                    <a href="#" class="btn">Leer más</a>
-
+                    <a href="https://viajes.nationalgeographic.com.es/a/nazare-capital-olas-gigantes-y-surf_13032" target="_blank" rel="noreferrer" class="btn">Leer más</a>
+                    <button class="btn" id="btnNazare">Ver tiempo</button>
                 </div>
             </div>
         </div>
     </main>
 
     </body>
-    <footer class="footer">
-        <div class="footer">
+    <footer class="footer"> <!-- Hacer el footer minimalista y básico-->
+        <div class="contenedor">
             <div class="footer-row">
                 <div class="footer-links">
-                   
                     <ul>
-                        <br>
-                        <br>
                         <h3>Vlog</h3>
                         <li><a href="#">Bluerush</a></li>
                         <li><a href="#">Preguntas Frecuentes</a></li>
                         <li><a href="#">Política y privacidad</a></li>
                         <li><a href="#">Términos y condiciones</a></li>
                     </ul>
-    
                 </div>
                 <div class="footer-links">
-                   
                     <ul>
                        <h3>El Mar es Responsabilidad de Todos</h3>
                         <li><a href="#">Reduce nuestro impacto</a></li>
@@ -89,25 +129,17 @@
                         <li><a href="#">Primeros Auxilios</a></li>
                         <li><a href="#">Protege nuestros terrenos de juego</a></li>
                     </ul>
-    
                 </div>
                 <div class="footer-links">
-                    <br>
-                    <br>
-                    <br>
                     <h3>Síguenos</h3>
                     <div class="contenedor-redes">
-                        <img src="img/imagenes/youtube.jpg" class="redes-sociales">
-                        <img src="img/imagenes/tik-tok.jpg"class="redes-sociales"> 
-                        <img src="img/imagenes/instagram.jpg" class="redes-sociales">
-                        <img src="img/imagenes/twitter.jpg" class="redes-sociales">
-                    
-    
+                        <a href="http://www.youtube.com" target="_blank" rel="noreferrer"><img src="img/imagenes/youtube.jpg" class="redes-sociales"></a>
+                        <a href="http://www.tiktok.com" target="_blank" rel="noreferrer"><img src="img/imagenes/tik-tok.jpg"class="redes-sociales"></a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noreferrer"><img src="img/imagenes/instagram.jpg" class="redes-sociales"></a>
+                        <a href="http://www.twitter.com" target="_blank" rel="noreferrer"><img src="img/imagenes/twitter.jpg" class="redes-sociales"></a>
+                    </div> 
                 </div>
             </div>
-            
         </div>
-        
     </footer>
-   
-</html>
+    </html>

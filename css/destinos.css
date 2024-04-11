@@ -50,6 +50,42 @@ main{
     align-items: center;
    /* background: #ea97cb;*/
 }
+
+.fondoModal {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    width: 39rem;
+    box-shadow: 9px 10px black;
+    border: 4px solid black;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .modalHeader {
+    background-color: rgb(255, 127, 242);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .modalHeader span {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  .modalFooter {
+    background-color: rgb(253, 127, 255);
+    margin-bottom: 0;
+  }
 .envoltura{
     display:flex;
     width: 70%;

@@ -45,7 +45,7 @@ main { /* menú */
     text-align: left;
     border-radius: 30px;
 }
-h5 #p1, #p2{
+#p9, #p1, #p2, #p3{
     text-align: justify-all;
     margin-top: 10px;
     font-size: 16px;
