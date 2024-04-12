@@ -28,6 +28,7 @@
 
     <main>
         <!--MODAL QUE APARECE AL ABRIR LA PAGINA-->
+        <!--Pequeño formulario que aparecerá al entrar en la página automáticamente-->
         <div>
             <div class="fondoModal" id="idModal">
               <div class="modal">
@@ -35,10 +36,18 @@
                   <span id="cierraModal">&times;</span>
                   <h2>Suscríbete</h2> <!--newsletter en la pantalla de inicio-->
                 </header>
+
                 <div>
-                  <p><input type="email" placeholder="Correo" id="correoModal"></p>
-                  <p><input type="password" placeholder="Contraseña" id="passModal"></p>
+                  <form action="enviar" method="post"></form> 
+
+                  <label for="correo">Correo</label>
+                  <input type="email" name="Correo" id="correo">
+                 
+                  <label for="password">Contraseña</label>
+                  <input type="password" name="Contraseña" id="password">
+
                   <button id ="suscribir">Suscribir</button>
+
                 </div>
                 <footer class="modalFooter">
                   <p>&copy; 2024 Bluerush </p>
