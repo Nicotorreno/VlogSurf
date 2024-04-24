@@ -2,4 +2,4 @@
 RewriteEngine On
 
 # Redirigir todas las solicitudes a "vlogsurfopen.html"
-RewriteRule ^(.*)$ pagina.html [L] 
+RewriteRule ^(.*)$ vlogsurfopen.html [L] 
