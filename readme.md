@@ -25,6 +25,6 @@ VlogSurf es una plataforma web dedicada a los amantes del surf que desean descub
 
 Como acceder a la web de VlogSurf, sigue este paso:
 
-1. Abre tu navegador web y navega a `http://vlogsurf.netlyfy.app` para acceder a la página.
+1. Abre tu navegador web y navega a `https://vlogsurf.netlify.app/vlogsurfopen` para acceder a la página.
 
 
