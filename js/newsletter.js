@@ -1,23 +1,28 @@
-function agregaEvento(){
+function agregaEvento() {
+    // Obtener el elemento del botón de enviar
     let boton = document.getElementById("enviar");
-    boton.addEventListener("click" , suscribir);
-
+    // Agregar un evento click al botón de enviar
+    boton.addEventListener("click", suscribir);
 }
 
-function suscribir(){
-    let nombre = document.getElementById("nombre");
-    let apellido = document.getElementById("apellido");
-    let correo = document.getElementById("correo");
-    let password = document.getElementById("password");
+function suscribir() {
+    // Obtener los valores de los campos de nombre, apellido, correo y contraseña
+    let nombre = document.getElementById("nombre").value;
+    let apellido = document.getElementById("apellido").value;
+    let correo = document.getElementById("correo").value;
+    let password = document.getElementById("password").value;
 
-
-if(nombre.value == ''|| apellido.value == '' || correo.value == '' || password.value == ''){
-    alert('Para suscribirte debes escribir todos los datos');
-}else{
-    alert('Te has suscrito correctamente');
-    location.href="vlogsurfopen.html";
+    // Verificar si algún campo está vacío
+    if (nombre == '' || apellido == '' || correo == '' || password == '') {
+        // Si algún campo está vacío, mostrar una alerta
+        alert('Para suscribirte debes escribir todos los datos');
+    } else {
+        // Si todos los campos están completos, mostrar una alerta de suscripción exitosa
+        alert('Te has suscrito correctamente');
+        // Redirigir al usuario a la página "vlogsurfopen.html"
+        location.href = "vlogsurfopen.html";
+    }
 }
 
-}
-
+// Ejecutar la función agregaEvento cuando la ventana se haya cargado completamente
 window.onload = agregaEvento;

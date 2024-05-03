@@ -1,224 +1,227 @@
 
-        
+/* Estilos para el cuerpo de la página */
+
 body {
-     
     margin: 0;
     padding: 0;
-    background-color:#faeafd;
-    
+    background-color: #faeafd;
 }
+
+/* Estilos para el encabezado y el logo */
+
 #headerLogo {
     background-color: #e6b9ef; /* Color de fondo del encabezado */
     padding: 20px;
     text-align: center;
 }
 
-
+/* Estilos para el logo */
 
 #headerLogo img {
-   max-width: 20%; /* Tamaño del logo */
-   height: auto;
+    max-width: 20%; /* Tamaño máximo del logo */
+    height: auto;
 }
-
-
+/* Estilo para la navegación */
 nav {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color:#460a48;
-    padding: 0.5px;
-    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente de la navegación */
+    background-color: #460a48; /* Color de fondo de la navegación */
+    padding: 0.5px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto en el centro */
 }
 
+/* Estilo para los enlaces de navegación */
 nav a {
-    color:white;
-    display:inline-block;
-    margin: 2px;
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-
+    color: white; /* Color del texto */
+    display: inline-block; /* Mostrar como bloque en línea */
+    margin: 2px; /* Margen entre enlaces */
+    text-decoration: none; /* Sin decoración de subrayado */
+    margin: 0 10px; /* Margen horizontal */
+    font-weight: bold; /* Peso de la fuente en negrita */
 }
 
+/* Estilo para el contenido principal */
 main {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 40px;
-    text-decoration: none;
-    text-align: left;
-    border-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Fuente del contenido principal */
+    padding: 40px; /* Espaciado interno */
+    text-decoration: none; /* Sin decoración de subrayado */
+    text-align: left; /* Alineación del texto a la izquierda */
+    border-radius: 30px; /* Radio de borde para la esquina redondeada */
+}
+/* Estilos para las imágenes */
+.img8 { /* Estilo para la primera imagen */
+    width: 350px; /* Ancho de la imagen */
+    height: 350px; /* Altura de la imagen */
+    padding: 15px; /* Relleno alrededor de la imagen */
+    vertical-align: top; /* Alineación vertical */
+    position: relative; /* Posición relativa */
+    border-radius: 20px; /* Radio de borde para esquinas redondeadas */
+    float: left; /* Colocar a la izquierda */
 }
 
-
-.img8{ /* Primera Imagen */
-    width:350px;
-    height:350px;
-    padding: 15px;
-    vertical-align: top;
-    position:relative;
-    border-radius: 20px;
-    float: left;
-
-
-    
+.img9 { /* Estilo para la segunda imagen */
+    width: 350px; /* Ancho de la imagen */
+    height: 350px; /* Altura de la imagen */
+    padding: 15px; /* Relleno alrededor de la imagen */
+    vertical-align: top; /* Alineación vertical */
+    position: relative; /* Posición relativa */
+    border-radius: 20px; /* Radio de borde para esquinas redondeadas */
+    float: right; /* Colocar a la derecha */
 }
 
-.img9{/* Segunda imagen*/
-    width:350px;
-    height:350px;
-    padding: 15px;
-    vertical-align: top;
-    position:relative;
-    border-radius: 20px;
-    float:right;
-
-
-}
-.img10{ /* Imagen número diez */
-    width:300px;
-    height:200px;
-    padding: 15px;
-    vertical-align: top;
-    position:relative;
-    border-radius: 25px;
-    float:center;
-
-    
-}
-  #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10{
-    text-align: justify-all;
-    margin-top: 10px;
-    font-size: 16px;
-    margin:10px;
-    text-align: left;
-
-
+.img10 { /* Estilo para la tercera imagen */
+    width: 300px; /* Ancho de la imagen */
+    height: 200px; /* Altura de la imagen */
+    padding: 15px; /* Relleno alrededor de la imagen */
+    vertical-align: top; /* Alineación vertical */
+    position: relative; /* Posición relativa */
+    border-radius: 25px; /* Radio de borde para esquinas redondeadas */
+    float: center; /* Centrar la imagen */
 }
 
-.contenedor{
-    width: 100%;
-    display:flex;
-    max-width:1100px;
-    margin: left 100px;
-
-}
-.card{    /* Colocar las cards centradas*/
-    width: 100%;
-    margin: 70px;
-    display: flex;
-    flex-direction: column;
-    border-radius:6px;
-    overflow:hidden;
-    background: #fff;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-    cursor: default;
-    transition: all 400ms ease;
-    text-align: center;
+/* Estilos para los párrafos */
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10 {
+    text-align: justify-all; /* Alinear el texto justificado */
+    margin-top: 10px; /* Margen superior */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 10px; /* Margen */
+    text-align: left; /* Alinear el texto a la izquierda */
 }
 
-.footer { /* Pie de página */
-    background-color:#e6b9ef; /*Color pie de página*/
-    margin: 0;
-    padding:0;
-    box-sizing:border-box;
-    list-style:none;
-    text-transform:capitalize;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 40px 100px;
-    text-align:center;
-    
+/* Estilos para el contenedor */
+.contenedor {
+    width: 100%; /* Ancho del contenedor */
+    display: flex; /* Mostrar como flex */
+    max-width: 1100px; /* Ancho máximo del contenedor */
+    margin: left 100px; /* Margen izquierdo */
 }
 
-.footer-row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-left:200px;
-
-}
-.footer-links{
-    width:25%;
-    padding: 0 15px;
-    text-decoration: none;
-
-}
-.footer-links h3{
-    font-size: 15px;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid;
-    padding-bottom:10px;
-    display:inline-block;
-    text-align: center;
-    
-}
-.footer-row ul li a{
-    font-size: 18px;
-    text-decoration:none;
-    display: block;
-    margin-bottom: 15px;
-    transition:all .3s ease;
-    color:hsl(290, 67%, 32%);
-}
-.footer-links ul li a:hover{
-    color:white;
-    padding-left: 6px;
+/* Estilos para las tarjetas */
+.card {
+    width: 100%; /* Ancho del 100% */
+    margin: 70px; /* Margen de 70px en todos los lados */
+    display: flex; /* Mostrar como flex */
+    flex-direction: column; /* Dirección de columna */
+    border-radius: 6px; /* Radio de borde de 6px */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    background: #fff; /* Fondo blanco */
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2); /* Sombra */
+    cursor: default; /* Cursor predeterminado */
+    transition: all 400ms ease; /* Transición */
+    text-align: center; /* Alineación del texto al centro */
 }
 
-.redes-sociales{
-    width: 30px;
-    height: 30px;
-    border-radius: 20px;
-    padding:0%;
-    margin-right: 10px;
+/* Estilos para el pie de página */
+.footer {
+    background-color: #e6b9ef; /* Color de fondo del pie de página */
+    margin: 0; /* Margen */
+    padding: 0; /* Relleno */
+    box-sizing: border-box; /* Modelo de caja */
+    list-style: none; /* Estilo de lista */
+    text-transform: capitalize; /* Transformación de texto a mayúsculas */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Familia de fuentes */
+    padding: 40px 100px; /* Relleno superior e inferior de 40px y relleno izquierdo y derecho de 100px */
+    text-align: center; /* Alineación del texto al centro */
 }
+
+/* Estilos para la fila del pie de página */
+.footer-row {
+    display: flex; /* Mostrar como flex */
+    flex-wrap: wrap; /* Envolver elementos en múltiples líneas si es necesario */
+    margin-left: 200px; /* Margen izquierdo de 200px */
+}
+
+/* Estilos para los enlaces del pie de página */
+.footer-links {
+    width: 25%; /* Ancho del enlace del pie de página */
+    padding: 0 15px; /* Relleno izquierdo y derecho de 15px */
+    text-decoration: none; /* Decoración de texto */
+}
+/* Estilos para los enlaces en el pie de página */
+.footer-links h3 {
+    font-size: 15px; /* Tamaño de fuente de 15px */
+    margin-bottom: 25px; /* Margen inferior de 25px */
+    font-weight: 500; /* Grosor de fuente de 500 */
+    border-bottom: 2px solid; /* Borde inferior de 2px sólido */
+    padding-bottom: 10px; /* Relleno inferior de 10px */
+    display: inline-block; /* Mostrar en línea */
+    text-align: center; /* Alinear el texto al centro */
+}
+
+/* Estilos para los enlaces en la fila del pie de página */
+.footer-row ul li a {
+    font-size: 18px; /* Tamaño de fuente de 18px */
+    text-decoration: none; /* Sin decoración de texto */
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 15px; /* Margen inferior de 15px */
+    transition: all .3s ease; /* Transición */
+    color: hsl(290, 67%, 32%); /* Color del texto */
+}
+
+/* Estilos para los enlaces en la lista del pie de página al pasar el mouse */
+.footer-links ul li a:hover {
+    color: white; /* Cambiar el color del texto a blanco */
+    padding-left: 6px; /* Añadir relleno izquierdo de 6px */
+}
+
+/* Estilos para las redes sociales */
+.redes-sociales {
+    width: 30px; /* Ancho de 30px */
+    height: 30px; /* Altura de 30px */
+    border-radius: 20px; /* Radio de borde de 20px */
+    padding: 0%; /* Relleno del 0% */
+    margin-right: 10px; /* Margen derecho de 10px */
+}
+    /* Estilos para los enlaces de redes sociales */
 .redes-sociales a {
-    display:inline-block;
-    min-height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-align:center;
-    line-height: 40px;
-    border-radius:50%;
-    color:white;
-    transition:all .5s ease ;
-
+    display: inline-block; /* Mostrar como bloque en línea */
+    min-height: 40px; /* Altura mínima de 40px */
+    width: 40px; /* Ancho de 40px */
+    margin: 0 10px 10px 0; /* Margen de 0 arriba, 10 a la derecha, 10 abajo, 0 a la izquierda */
+    text-align: center; /* Alinear el texto al centro */
+    line-height: 40px; /* Altura de línea de 40px */
+    border-radius: 50%; /* Radio de borde del 50% */
+    color: white; /* Color del texto blanco */
+    transition: all .5s ease; /* Transición de todas las propiedades durante 0.5 segundos con efecto de suavizado */
 }
 
-.contenedor{
-   max-width: 1200px;
-    margin:0auto;
-    margin-right: 50%;
-
-
+/* Estilos para el contenedor */
+.contenedor {
+    max-width: 1200px; /* Ancho máximo de 1200px */
+    margin: 0 auto; /* Margen automático a los lados para centrar */
+    margin-right: 50%; /* Margen derecho del 50% */
 }
 
-ul{
-    list-style:none;
+/* Estilos para las listas no ordenadas */
+ul {
+    list-style: none; /* Quitar los estilos de la lista */
 }
 
-.contenedor-redes{
-    display: flex;
-    justify-content: center;
+/* Estilos para el contenedor de redes sociales */
+.contenedor-redes {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Justificar contenido al centro */
 }
 
-/* Responsive */
-    @media screen and (max-width: 568px){
-       
-            header a {
-              display: none;
-            }
-            .icon {
-              float: left;
-              display: block;
-            }
-            header .responsive a {
-              display: block;
-              text-align: center;
-              float: none;
-            }
-            .footer-links{
-                width:100%;
-                margin:0;
-            }
-            .footer-row{
-                margin-left:0;
-            }
-        }
-        
+/* Estilos para dispositivos móviles con ancho máximo de 568px */
+@media screen and (max-width: 568px) {
+    header a {
+        display: none; /* Ocultar los enlaces del encabezado */
+    }
+    .icon {
+        float: left; /* Flotar a la izquierda */
+        display: block; /* Mostrar como bloque */
+    }
+    header .responsive a {
+        display: block; /* Mostrar los enlaces del menú responsive como bloque */
+        text-align: center; /* Alinear el texto al centro */
+        float: none; /* Quitar el flotador */
+    }
+    .footer-links {
+        width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+        margin: 0; /* Quitar el margen */
+    }
+    .footer-row {
+        margin-left: 0; /* Quitar el margen izquierdo */
+    }
+}
+

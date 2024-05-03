@@ -1,179 +1,196 @@
-body{
-    background-image: url(../img/imagenes/img12.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    padding:0;
-    margin:0;
-
-}
-
-.body{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50vh;
-    padding: 0px;
-    margin-left:40%;
-    margin-top:5%;
-    box-sizing:border-box;
-    text-align: center;
-    margin-bottom: 200px;
-
-}
-
-
-form{
-    background-color:transparent;
-    display: flex ;
-    flex-direction: column;
-    padding: 20px;
-    width: 300px;
-   height: 100%;
-    box-shadow: 0 0 20px black;
-    text-align: center;
-}
- form h3{
-    font-size: 20px;
-    color:rgb(146, 20, 136);
-    margin-bottom:35px;
+/* Estilos para el cuerpo */
+body {
+   background-image: url(../img/imagenes/img12.jpg); /* Imagen de fondo */
+   background-size: cover; /* Tamaño de la imagen de fondo */
+   background-repeat: no-repeat; /* No repetir la imagen de fondo */
+   background-position: center; /* Posición de la imagen de fondo */
+   background-attachment: fixed; /* Fijar la imagen de fondo */
+   padding: 0; /* Sin relleno */
+   margin: 0; /* Sin margen */
  }
- input{
-    padding: 17px;
-    border-radius: 15px;
-    background-color: transparent;
-    border: 2px solid rgb(8, 7, 7);
-    margin-bottom: 30px;
-    outline:none;
-    color:black;
-    font-size:10px;
+ 
+ /* Estilos para el cuerpo del contenido */
+ .body {
+   font-family: Arial, Helvetica, sans-serif; /* Familia de fuentes */
+   display: flex; /* Mostrar como flex */
+   justify-content: center; /* Justificar el contenido al centro */
+   align-items: center; /* Alinear elementos al centro verticalmente */
+   min-height: 50vh; /* Altura mínima del cuerpo */
+   padding: 0px; /* Sin relleno */
+   margin-left: 40%; /* Margen izquierdo */
+   margin-top: 5%; /* Margen superior */
+   box-sizing: border-box; /* Modelo de caja */
+   text-align: center; /* Alineación del texto al centro */
+   margin-bottom: 200px; /* Margen inferior */
  }
-
- ::placeholder{
-    color: rgb(2, 2, 2);
-
+ 
+ /* Estilos para el formulario */
+ form {
+   background-color: transparent; /* Color de fondo transparente */
+   display: flex; /* Mostrar como flex */
+   flex-direction: column; /* Dirección de la columna */
+   padding: 20px; /* Relleno */
+   width: 300px; /* Ancho */
+   height: 100%; /* Altura */
+   box-shadow: 0 0 20px black; /* Sombra */
+   text-align: center; /* Alineación del texto al centro */
  }
- .newsletter{
-    background-color: blueviolet;
-    border: 2px solid transparent;
-    cursor:pointer;
-
-
+ /* Estilos para el título del formulario */
+form h3 {
+   font-size: 20px; /* Tamaño de la fuente */
+   color: rgb(146, 20, 136); /* Color del texto */
+   margin-bottom: 35px; /* Margen inferior */
  }
-
- .newsletter:hover{
-    background-color: rgb(241, 187, 239);
-    border:2px solid;
+ 
+ /* Estilos para los campos de entrada */
+ input {
+   padding: 17px; /* Relleno */
+   border-radius: 15px; /* Radio del borde */
+   background-color: transparent; /* Color de fondo transparente */
+   border: 2px solid rgb(8, 7, 7); /* Borde */
+   margin-bottom: 30px; /* Margen inferior */
+   outline: none; /* Sin contorno */
+   color: black; /* Color del texto */
+   font-size: 10px; /* Tamaño de la fuente */
  }
+ 
+ /* Estilos para el marcador de posición */
+ ::placeholder {
+   color: rgb(2, 2, 2); /* Color del marcador de posición */
+ }
+ 
+ /* Estilos para el botón de newsletter */
+ .newsletter {
+   background-color: blueviolet; /* Color de fondo */
+   border: 2px solid transparent; /* Borde */
+   cursor: pointer; /* Cursor al pasar sobre el botón */
+ }
+ 
+ /* Estilos para el botón de newsletter al pasar el cursor */
+ .newsletter:hover {
+   background-color: rgb(241, 187, 239); /* Color de fondo al pasar el cursor */
+   border: 2px solid; /* Borde al pasar el cursor */
+ }
+ 
 
-
- .footer { /* Pie de página */
-   background-color:#e6b9ef; /*Color pie de página*/
-   margin: 0;
-   padding:0;
-   box-sizing:border-box;
-   list-style:none;
-   text-transform:capitalize;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
-   padding: 40px 100px;
-   text-align:center;
-   
+/* Estilos para el pie de página */
+.footer {
+   background-color: #e6b9ef; /* Color de fondo del pie de página */
+   margin: 0; /* Margen */
+   padding: 0; /* Relleno */
+   box-sizing: border-box; /* Modelo de caja */
+   list-style: none; /* Estilo de lista */
+   text-transform: capitalize; /* Transformación de texto */
+   font-family: Verdana, Geneva, Tahoma, sans-serif; /* Familia de fuentes */
+   padding: 40px 100px; /* Relleno */
+   text-align: center; /* Alineación del texto */
+ }
+ 
+ /* Estilos para la fila del pie de página */
+ .footer-row {
+   display: flex; /* Mostrar como flexbox */
+   flex-wrap: wrap; /* Envolver los elementos cuando sea necesario */
+   margin-left: 200px; /* Margen izquierdo */
+ }
+ 
+ /* Estilos para los enlaces del pie de página */
+ .footer-links {
+   width: 25%; /* Ancho */
+   padding: 0 15px; /* Relleno */
+   text-decoration: none; /* Decoración de texto */
+ }
+ 
+ /* Estilos para los títulos de los enlaces del pie de página */
+ .footer-links h3 {
+   font-size: 15px; /* Tamaño de la fuente */
+   margin-bottom: 25px; /* Margen inferior */
+   font-weight: 500; /* Grosor de la fuente */
+   border-bottom: 2px solid; /* Borde inferior */
+   padding-bottom: 10px; /* Relleno inferior */
+   display: inline-block; /* Mostrar en línea como bloque */
+   text-align: center; /* Alineación del texto */
+ }
+/* Estilos para los enlaces de la fila del pie de página */
+.footer-row ul li a {
+   font-size: 18px; /* Tamaño de la fuente */
+   text-decoration: none; /* Decoración de texto */
+   display: block; /* Mostrar como bloque */
+   margin-bottom: 15px; /* Margen inferior */
+   transition: all .3s ease; /* Transición */
+   color: hsl(290, 67%, 32%); /* Color del texto */
 }
 
-.footer-row{
-   display: flex;
-   flex-wrap: wrap;
-   margin-left:200px;
-
-}
-.footer-links{
-   width:25%;
-   padding: 0 15px;
-   text-decoration: none;
-
-}
-.footer-links h3{
-   font-size: 15px;
-   margin-bottom: 25px;
-   font-weight: 500;
-   border-bottom: 2px solid;
-   padding-bottom:10px;
-   display:inline-block;
-   text-align: center;
-   
-}
-.footer-row ul li a{
-   font-size: 18px;
-   text-decoration:none;
-   display: block;
-   margin-bottom: 15px;
-   transition:all .3s ease;
-   color:hsl(290, 67%, 32%);
-}
-.footer-links ul li a:hover{
-   color:white;
-   padding-left: 6px;
+/* Estilos para los enlaces del pie de página al pasar el mouse sobre ellos */
+.footer-links ul li a:hover {
+   color: white; /* Color del texto al pasar el mouse */
+   padding-left: 6px; /* Relleno izquierdo */
 }
 
-.redes-sociales{
-   width: 30px;
-   height: 30px;
-   border-radius: 20px;
-   padding:0%;
-   margin-right: 10px;
+/* Estilos para los iconos de redes sociales */
+.redes-sociales {
+   width: 30px; /* Ancho */
+   height: 30px; /* Alto */
+   border-radius: 20px; /* Radio del borde */
+   padding: 0%; /* Relleno */
+   margin-right: 10px; /* Margen derecho */
 }
+/* Estilos para los enlaces de las redes sociales */
 .redes-sociales a {
-   display:inline-block;
-   min-height: 40px;
-   width: 40px;
-   margin: 0 10px 10px 0;
-   text-align:center;
-   line-height: 40px;
-   border-radius:50%;
-   color:white;
-   transition:all .5s ease ;
-
+   display: inline-block; /* Mostrar como bloque en línea */
+   min-height: 40px; /* Altura mínima */
+   width: 40px; /* Ancho */
+   margin: 0 10px 10px 0; /* Margen */
+   text-align: center; /* Alineación del texto */
+   line-height: 40px; /* Altura de línea */
+   border-radius: 50%; /* Radio del borde */
+   color: white; /* Color del texto */
+   transition: all .5s ease; /* Transición */
 }
 
-.contenedor{
-  max-width: 1200px;
-   margin:0auto;
-   margin-right: 50%;
-
-
+.contenedor {
+   max-width: 1200px; /* Ancho máximo */
+   margin: 0 auto; /* Margen automático */
+   margin-right: 50%; /* Margen derecho */
 }
 
-ul{
-   list-style:none;
+ul {
+   list-style: none; /* Quitar viñetas de lista */
 }
 
-.contenedor-redes{
-   display: flex;
-   justify-content: center;
+.contenedor-redes {
+   display: flex; /* Mostrar como flex */
+   justify-content: center; /* Justificar contenido al centro */
+}
+/* Estilos para dispositivos con pantalla de hasta 568px de ancho */
+
+@media screen and (max-width: 568px) {
+   /* Ocultar los enlaces del encabezado */
+   header a {
+       display: none;
+   }
+
+   /* Mostrar el icono del menú */
+   .icon {
+       float: left;
+       display: block;
+   }
+
+   /* Alinear los enlaces del menú desplegable al centro */
+   header .responsive a {
+       display: block;
+       text-align: center;
+       float: none;
+   }
+
+   /* Ajustar el ancho de los enlaces del pie de página */
+   .footer-links {
+       width: 100%;
+       margin: 0;
+   }
+
+   /* Ajustar el margen izquierdo de la fila del pie de página */
+   .footer-row {
+       margin-left: 0;
+   }
 }
  
-/* Responsive */
-@media screen and (max-width: 568px){
-       
-    header a {
-      display: none;
-    }
-    .icon {
-      float: left;
-      display: block;
-    }
-    header .responsive a {
-      display: block;
-      text-align: center;
-      float: none;
-    }
-    .footer-links{
-      width:100%;
-      margin:0;
-  }
-  .footer-row{
-      margin-left:0;
-  }
-}
